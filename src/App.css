@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 1fr 0.1fr;
+}
+
+header a {
+    color: white;
+}
+
+#search {
+    display: flex;
+    font-size:large;
+}
+
+#search input {
+    margin-left: 10px;
+    height: 30px;
+}
+
+#headerHomeIcon {
+    justify-self: start;
+}
+
+#headerTitle {
+    justify-self: center;
+}
+
+#headerCartIcon {
+    justify-self: end;
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+#home{
+    margin: 20px;
+
+}
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.1;
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+nav ul li {
+    padding-bottom: 5px;
+}
+
+nav ul li:hover {
+    color: blue;
+}
+
+main {
+    flex: 0.9;
+    padding-top: 20px;
+    min-height: 1600px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+article{
+    height: 330px;
+    display:block;
+    position:relative;
+    width: 100%;
+}
+img{
+    height: 250px;
+    width:250px;
+    display: inline-block;
+    position: absolute;
+
+}
+.category-product-image-container{
+    padding: 5px;
+    display: inline-block;
+    position: absolute;
+    height: 300px;
+    width:300px;
+}
+.category-product-title{
+    font-weight: bold;
+    padding: 10px;
+}
+.category-info{
+    margin-left:300px;
+    display:inline-block;
+    width: 500px;
+    position:absolute;
+    
+}
+.category-product-info-dimentions{
+    padding: 2px;
+}
+.category-product-info-capacity{
+    padding: 2px;
+}
+.category-product-info-features{
+    padding: 2px;
+}
+.category-product-finance{
+    margin-left:850px;
+    display:inline-block;
+    width: 120px;
+    position:absolute;
+    text-align: center;
+}
+.category-product-finance-price{
+    padding: 2px;
+}
+.category-product-finance-stock{
+    padding: 2px;
+    background-color: rgb(167, 165, 165);
+    border: 1px solid rgb(228, 147, 47);
+    border-radius: 20%;
+}
+.category-product-finance-action{
+    padding: 2px;
+    margin-left: 7px;
+    position: center;
+}
+label{
+    display: block;
+    padding: 2px;
+}
+button{
+    display: block;
+    padding: 5px;
+    margin: 3px;
+    background-color: aqua;
+    border-radius: 10%;
+    border: 1px solid black;
+    position: center;
+    
+}
+h3{
+    padding: 3px;
+    color:blue;
+}
